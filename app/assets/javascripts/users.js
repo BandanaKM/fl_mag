@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   $(".tweet").click(function(){
    	var title = '"'+$(this).parent(".entry").find("h1").text()+'"'; 
-   	var twitter_handle = $("#twitter_handle").html(); 
+   	var twitter_handle = $("#twitter_handle").text(); 
    	var blogpost_url = "http://"+window.location.host+""+ $(this).parent(".entry").find(".blogpost_url").attr("href"); 
    	var tweet_string = title+ "- Guest post by student " + twitter_handle + blogpost_url; 
    	var data = { tweet: tweet_string };  
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
    			$.post('/users/tweet', data, function(return_data){
 
-   				//$('#tweet').modal('hide');
+   				$('#tweet').modal('hide');
    				console.log(return_data);
    			});
 

@@ -1,4 +1,4 @@
-class Entry < ActiveRecord::Base
+1class Entry < ActiveRecord::Base
   belongs_to :feed
   belongs_to :blogger
   has_many :entries_tags

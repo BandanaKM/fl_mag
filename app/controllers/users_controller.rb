@@ -26,6 +26,7 @@ class UsersController < ApplicationController
     user = User.new
     user.name                  = params[:name]
     user.email                 = params[:email]
+    user.twitter_handle        = params[:twitter_handle]
     user.password              = params[:password]
     user.password_confirmation = params[:password_confirmation]
     if user.save 
