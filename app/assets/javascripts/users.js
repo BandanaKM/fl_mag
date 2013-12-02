@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $(this).removeClass("btn-success");
     $(this).addClass("btn-warning");
-    $(this).text("Published!");
+    $(this).text("Published");
 
   });
 

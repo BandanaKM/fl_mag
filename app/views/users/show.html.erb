@@ -55,9 +55,9 @@
       <a href="#"><h4><%= entry.author_name %></h4></a>
       <% if entry.added? == false %>
         <button type="button" class="btn btn-success publish" data-entry-slug="<%= entry.slug %>">Publish</button>
-        <button type="button" class="btn btn-success tweet" data-entry-slug="<%= entry.slug %>">Tweet</button>
+        <button type="button" class="btn btn-info tweet" data-entry-slug="<%= entry.slug %>">Tweet</button>
       <% elsif entry.added? == true %>
-        <button type="button" class="btn btn-warning">Published!</button>
+        <button type="button" class="btn btn-warning">Published</button>
       <% end %>
       
       <hr>
